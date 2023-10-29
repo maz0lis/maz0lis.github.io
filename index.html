@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div>
+            <button onclick="askName()">Давай позакомимся</button>
+        </div>
+        <div>
+            <h2>Чат</h2>
+            <hr>
+            <input type="text" placeholder="Введите имя пользователя" id="userName" value="">
+            <input type="text" placeholder="Введите сообщение" id="message" value="">
+            <button onclick="chatting()">Ввод</button>
+            <p id="result">Результат:</p>
+            <p id="error"></p>
+        </div>
+        <div>
+            <h2>Калькулятор</h2>
+            <hr>
+            <p>Можно использовать математические знаки: +, -, *, /, ^</p>
+            <input type="text" placeholder="Введите число 1" id="numOne" value="">
+            <input type="text" placeholder="Введите знак" id="sign" value="">
+            <input type="text" placeholder="Введите число 2" id="numTwo" value="">
+            <button onclick="calculator()">Ввод</button>
+            <input type="text" readonly placeholder="Результат" id="resultNum">
+        </div>
+    </main>
+
+    <footer>
+        <p>©2023</p>
+    </footer>
+</body>
+</html>
